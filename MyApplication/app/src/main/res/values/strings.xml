@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Create Queues</string>
+    <string name="slide_1_desc">Be a vendor, create and manage multiple queues, according to your need</string>
+    <string name="slide_2_title">Search Queue Details </string>
+    <string name="slide_2_desc">As a customer, get details about a specific queue and plan your schedule beforehand</string>
+    <string name="slide_3_title">Get Started</string>
+   <!-- <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string> -->
+</resources>
