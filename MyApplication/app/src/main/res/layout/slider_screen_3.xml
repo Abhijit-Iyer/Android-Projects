@@ -2,41 +2,67 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
     android:background="@color/background_slider_screen_3">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:id="@+id/linearLayout">
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/slide_3_title"
-            android:textColor="@android:color/black"
-            android:layout_marginBottom="@dimen/slide_title"
-            android:textSize="@dimen/slide_title"
-            android:textStyle="bold" />
+            android:text="@string/slider_3_nametext"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#212121"/>
 
+        <EditText
+            android:layout_width="@dimen/textboxwidth"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="#B9F6CA"
+            android:textSize="@dimen/textsize"
+            android:textColor="#212121"/>
     </LinearLayout>
 
-    <Button
-        android:text="Login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout"
-        android:layout_centerHorizontal="true"
-        android:background="@null"
-        android:id="@+id/Login" />
 
-    <Button
-        android:text="Register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:id="@+id/Register"
-        android:layout_below="@+id/Login"
-        android:background="@null"
-        android:layout_alignStart="@+id/Login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slider_3_optiontext"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#212121"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="VENDOR"
+            android:background="#795548"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="CUSTOMER"
+            android:background="#795548"/>
+    </LinearLayout>
+
+
 </RelativeLayout>

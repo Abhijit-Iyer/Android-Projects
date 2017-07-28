@@ -7,27 +7,32 @@
     <!-- Screen Background Colours -->
     <color name="background_slider_screen_1">#4CAF50</color>
     <color name="background_slider_screen_2">#009688</color>
-    <color name="background_slider_screen_3">#99A62B</color>
+    <color name="background_slider_screen_3">#69F0AE</color>
+    <color name="background_slider_screen_4">#99A62B</color>
 
     <!-- Inactive Screen Dot Colours -->
     <color name="dot_inactive_slider_screen_1">#214D22</color>
     <color name="dot_inactive_slider_screen_2">#004D45</color>
-    <color name="dot_inactive_slider_screen_3">#243313</color>
+    <color name="dot_inactive_slider_screen_3">#214D22</color>
+    <color name="dot_inactive_slider_screen_4">#243313</color>
 
     <!-- Active Screen Dot Colours -->
     <color name="dot_active_slider_screen_1">#163317</color>
     <color name="dot_active_slider_screen_2">#00332E</color>
-    <color name="dot_active_slider_screen_3">#828C24</color>
+    <color name="dot_active_slider_screen_3">#163317</color>
+    <color name="dot_active_slider_screen_4">#828C24</color>
 
     <array name="array_dot_active">
         <item>@color/dot_active_slider_screen_1</item>
         <item>@color/dot_active_slider_screen_2</item>
         <item>@color/dot_active_slider_screen_3</item>
+        <item>@color/dot_active_slider_screen_4</item>
     </array>
 
     <array name="array_dot_inactive">
         <item>@color/dot_inactive_slider_screen_1</item>
         <item>@color/dot_inactive_slider_screen_2</item>
         <item>@color/dot_inactive_slider_screen_3</item>
+        <item>@color/dot_inactive_slider_screen_4</item>
     </array>
 </resources>

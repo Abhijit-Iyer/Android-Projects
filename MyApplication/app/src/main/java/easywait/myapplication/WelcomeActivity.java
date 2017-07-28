@@ -1,5 +1,6 @@
 package easywait.myapplication;
 
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -27,9 +29,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 public class WelcomeActivity extends Activity {
 
     private ViewPager viewPager;
-    private MyViewPagerAdapter myViewPagerAdapter;
     private LinearLayout dotsLayout;
-    private TextView[] dots;
     private int[] layouts;
     private Button btnSkip, btnNext;
     private PreferenceManager prefManager;
@@ -64,7 +64,8 @@ public class WelcomeActivity extends Activity {
         layouts = new int[]{
                 R.layout.slider_screen_1,
                 R.layout.slider_screen_2,
-                R.layout.slider_screen_3};
+                R.layout.slider_screen_3,
+                R.layout.slider_screen_4};
 
         // adding bottom dots
         addBottomDots(0);
@@ -72,7 +73,7 @@ public class WelcomeActivity extends Activity {
         // making notification bar transparent
         changeStatusBarColor();
 
-        myViewPagerAdapter = new MyViewPagerAdapter();
+        MyViewPagerAdapter myViewPagerAdapter = new MyViewPagerAdapter();
         viewPager.setAdapter(myViewPagerAdapter);
         viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
 
@@ -91,7 +92,7 @@ public class WelcomeActivity extends Activity {
                 int current = getItem(+1);
                 if (current < layouts.length) {
                     // move to next screen
-                    viewPager.setCurrentItem(current);
+                    ((ViewPager) findViewById(R.id.view_pager)).setCurrentItem(current);
                 } else {
                     launchHomeScreen();
                 }
@@ -103,7 +104,7 @@ public class WelcomeActivity extends Activity {
     }
 
     private void addBottomDots(int currentPage) {
-        dots = new TextView[layouts.length];
+        TextView[] dots = new TextView[layouts.length];
 
         int[] colorsActive = getResources().getIntArray(R.array.array_dot_active);
         int[] colorsInactive = getResources().getIntArray(R.array.array_dot_inactive);

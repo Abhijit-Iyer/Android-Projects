@@ -8,7 +8,9 @@
     <string name="slide_1_desc">Be a vendor, create and manage multiple queues, according to your need</string>
     <string name="slide_2_title">Search Queue Details </string>
     <string name="slide_2_desc">As a customer, get details about a specific queue and plan your schedule beforehand</string>
-    <string name="slide_3_title">Get Started</string>
+    <string name="slider_3_nametext">People know you as :</string>
+    <string name="slider_3_optiontext">Operate as :</string>
+    <string name="slide_4_title">Get Started</string>
    <!-- <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string> -->
 </resources>
